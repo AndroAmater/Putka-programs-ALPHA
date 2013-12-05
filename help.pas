@@ -10,7 +10,9 @@ implementation
     writeln(':l - List currently implemented programs');
     writeln(':r - Run a program. Enter ":r" then enter');
     writeln('     program number shown by list command');
-    writeln(':r - Show source code. Enter ":src" then enter');
+    writeln(':src - Show source code. Enter ":src" then enter');
+    writeln('     program number shown by list command');
+    writeln(':t - Show program task. Enter ":t" then enter');
     writeln('     program number shown by list command');
     writeln(':c - Clear screen');
     writeln(':q - Quit program');
