@@ -82,6 +82,21 @@ begin
       else
         writeln('Unknown program');
     end
+
+// :t Command
+    else if z2 = ':t' then
+    begin
+      write('Program task> ');
+      readln(z3);
+      if z3 = '1a' then
+      begin
+        clrscr;
+        aSistem_Task();
+      end
+      else
+        writeln('Unknown program');
+    end  
+
  
     else
       writeln('Unknown command!');
