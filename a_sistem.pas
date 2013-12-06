@@ -14,7 +14,7 @@ implementation
     a:=0;
     d:=0;
     b:='';
-    c:='';
+   c:='';
     for i:=1 to 10000 do
     begin
       e[i]:=0;
@@ -89,18 +89,18 @@ implementation
     writeln;
     writeln;
     writeln('Vhodni podatki');
-    writeln('  V edini vrstici je celo število M, ki ga je potrebno prešifrirati.'#13#10'Omejitve vhodnih podatkov'#13#10'0 =< M =< 2 * 10^9');
+    writeln('  V edini vrstici je celo stevilo M, ki ga je potrebno presifrirati.'#13#10'  Omejitve vhodnih podatkov'#13#10'  0 =< M =< 2 * 10^9');
     writeln;
     writeln;
     writeln('Izhodni podatki');
-    writeln('  Izpiše niz črk, ki ustreza šifri števila M po gornjih pravilih.');
+    writeln('  Izpise niz crk, ki ustreza sifri stevila M po gornjih pravilih.');
     writeln;
     writeln;
     writeln('Primeri');
-    writeln('Vhod     Izhod');
-    writeln('0        A');
-    writeln('1        B');
-    writeln('26       BA');
-    writeln('52       CA');
+    writeln('  Vhod     Izhod');
+    writeln('  0        A');
+    writeln('  1        B');
+    writeln('  26       BA');
+    writeln('  52       CA');
   end;
 end.
