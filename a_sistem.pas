@@ -85,10 +85,22 @@ implementation
   procedure aSistem_Task();
   begin
     writeln('Naloga');
-    writeln('Klinika torej potrebuje program, ki zna sifrirati stevilke'#13#10'tako, da jih zapise z velikimi crkami angleske abecede od "A" do "Z"'#13#10'(skupno 26 moznih crk) po naslednjem pravilu: Prvih 26 stevilk'#13#10'(vkljucno s stevilko 0) nadomesti z eno crko; naslednjih 25 * 26'#13#10'stevilk nadomesti z dvema crkama in tako dalje, podobno kot je'#13#10'zgrajen stevilski sistem. Namesto 0 pisemo "A", namesto 1 pisemo "B"'#13#10'itd. Namesto 25 pisemo "Z", namesto 26 pisemo "BA", namesto 27 pisemo'#13#10'"BB", namesto 28 pisemo "BC", itn. Program naj prebere stevilko, vrne'#13#10'pa naj s crkami zapisano stevilo.');
+    writeln('  Klinika torej potrebuje program, ki zna sifrirati stevilke'#13#10'  tako, da jih zapise z velikimi crkami angleske abecede od "A" do "Z"'#13#10'  (skupno 26 moznih crk) po naslednjem pravilu: Prvih 26 stevilk'#13#10'  (vkljucno s stevilko 0) nadomesti z eno crko; naslednjih 25 * 26'#13#10'  stevilk nadomesti z dvema crkama in tako dalje, podobno kot je'#13#10'  zgrajen stevilski sistem. Namesto 0 pisemo "A", namesto 1 pisemo "B"'#13#10'  itd. Namesto 25 pisemo "Z", namesto 26 pisemo "BA", namesto 27 pisemo'#13#10'  "BB", namesto 28 pisemo "BC", itn. Program naj prebere stevilko, vrne'#13#10'  pa naj s crkami zapisano stevilo.');
     writeln;
     writeln;
     writeln('Vhodni podatki');
-    writeln('V edini vrstici je celo število M, ki ga je potrebno prešifrirati.'#13#10'Omejitve vhodnih podatkov'#13#10'0 =< M =< 2 * 10^9')
+    writeln('  V edini vrstici je celo število M, ki ga je potrebno prešifrirati.'#13#10'Omejitve vhodnih podatkov'#13#10'0 =< M =< 2 * 10^9');
+    writeln;
+    writeln;
+    writeln('Izhodni podatki');
+    writeln('  Izpiše niz črk, ki ustreza šifri števila M po gornjih pravilih.');
+    writeln;
+    writeln;
+    writeln('Primeri');
+    writeln('Vhod     Izhod');
+    writeln('0        A');
+    writeln('1        B');
+    writeln('26       BA');
+    writeln('52       CA');
   end;
 end.
