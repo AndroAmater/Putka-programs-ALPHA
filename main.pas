@@ -24,28 +24,28 @@ begin
   writeln('Putka programs ALPHA');
   writeln('By AndroAmater');
   writeln;
-  writeln('For help type ":h"');
+  writeln('For help type "h"');
   writeln;
   writeln;
 
-// :q Command
+// q! Command
   z:=false;
   while z = false do
   begin
     write('Command> ');
     readln(z2);
-    if z2 = ':q' then
+    if z2 = 'q!' then
       z:=true
 
-// :l Command
-    else if z2 = ':l' then
+// l Command
+    else if z2 = 'l' then
     begin
       clrscr;
       List1();
     end
 
-// :r Command
-    else if z2 = ':r' then
+// r Command
+    else if z2 = 'r' then
     begin
       write('Run> ');
       readln(z3);
@@ -58,19 +58,19 @@ begin
         writeln('Unknown program');
     end
 
-// :c Command
-    else if z2 = ':c' then
+// c Command
+    else if z2 = 'c' then
       clrscr
 
-// :h Command
-    else if z2 = ':h' then
+// h Command
+    else if z2 = 'h' then
     begin
       clrscr;  
       ShowHelp();
     end
 
-// :src Command
-    else if z2 = ':src' then
+// src Command
+    else if z2 = 'src' then
     begin
       write('Program source> ');
       readln(z3);
@@ -83,8 +83,8 @@ begin
         writeln('Unknown program');
     end
 
-// :t Command
-    else if z2 = ':t' then
+// t Command
+    else if z2 = 't' then
     begin
       write('Program task> ');
       readln(z3);
