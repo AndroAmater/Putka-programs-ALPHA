@@ -85,6 +85,10 @@ implementation
   procedure aSistem_Task();
   begin
     writeln('Naloga');
-    writeln('Klinika torej potrebuje program, ki zna šifrirati številke tako,'#13#10'da jih zapiše z velikimi črkami angleške abecede od "A" do "Z"'#13#10'(skupno 26 možnih črk) po naslednjem pravilu:'#13#10'Prvih 26 številk (vključno s številko 0) nadomesti z eno črko; naslednjih 25 * 26 številk'#13#10'nadomesti z dvema črkama in tako dalje,'#13#10'podobno kot je zgrajen številski sistem. Namesto 0 pišemo "A",'#13#10'namesto 1 pišemo "B" itd. Namesto 25 pišemo "Z",'#13#10'namesto 26 pišemo "BA", namesto 27 pišemo "BB", namesto 28 pišemo "BC", itn.'#13#10'Program naj prebere številko, vrne pa naj s črkami zapisano število.');
+    writeln('Klinika torej potrebuje program, ki zna sifrirati stevilke'#13#10'tako, da jih zapise z velikimi crkami angleske abecede od "A" do "Z"'#13#10'(skupno 26 moznih crk) po naslednjem pravilu: Prvih 26 stevilk'#13#10'(vkljucno s stevilko 0) nadomesti z eno crko; naslednjih 25 * 26'#13#10'stevilk nadomesti z dvema crkama in tako dalje, podobno kot je'#13#10'zgrajen stevilski sistem. Namesto 0 pisemo "A", namesto 1 pisemo "B"'#13#10'itd. Namesto 25 pisemo "Z", namesto 26 pisemo "BA", namesto 27 pisemo'#13#10'"BB", namesto 28 pisemo "BC", itn. Program naj prebere stevilko, vrne'#13#10'pa naj s crkami zapisano stevilo.');
+    writeln;
+    writeln;
+    writeln('Vhodni podatki');
+    writeln('V edini vrstici je celo število M, ki ga je potrebno prešifrirati.'#13#10'Omejitve vhodnih podatkov'#13#10'0 =< M =< 2 * 10^9')
   end;
 end.
