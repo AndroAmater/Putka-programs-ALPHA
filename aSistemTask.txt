@@ -1,0 +1,45 @@
+Naloga
+======
+
+Klinika torej potrebuje program, ki zna šifrirati 
+številke tako, da jih zapiše z velikimi črkami angleške 
+abecede od 'A' do 'Z' (skupno 26 možnih črk) po naslednjem
+pravilu: Prvih 26 številk (vključno s številko 0) 
+nadomesti z eno črko; naslednjih 25 \cdot 26 številk 
+nadomesti z dvema črkama in tako dalje, podobno kot je 
+zgrajen številski sistem. Namesto 0 pišemo 'A', namesto 1 
+pišemo 'B' itd. Namesto 25 pišemo 'Z', namesto 26 pišemo 'BA',
+namesto 27 pišemo 'BB', namesto 28 pišemo 'BC', itn.
+
+-----------------------------------------------------------
+
+Vhodni podatki
+==============
+V edini vrstici je celo število M, ki ga je potrebno 
+prešifrirati.
+
+Omejitve vhodnih podatkov
+0 <= M <= 2*10^9
+
+-----------------------------------------------------------
+
+Izhodni podatki
+===============
+Izpiše niz črk, ki ustreza šifri števila M po gornjih 
+pravilih.
+
+-----------------------------------------------------------
+
+Primeri
+=======
+Vhod  Izhod
+0     A
+
+Vhod  Izhod
+1     B
+
+Vhod  Izhod
+26    BA
+
+Vhod  Izhod
+52    CA
