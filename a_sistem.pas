@@ -1,15 +1,18 @@
 unit a_sistem;
 interface
+{$mode objfpc}
+uses Sysutils;
 procedure aSistem();
 procedure aSistem_Source();
+procedure aSistem_Source2();
 procedure aSistem_Task();
 
 implementation
   procedure aSistem();
     var
-      a,i,d:integer;
+      a,i,d:longint;
       b,c:string;
-      e:array[1..10000] of integer;
+      e:array[1..10000] of longint;
   begin
     a:=0;
     d:=0;
@@ -81,6 +84,21 @@ implementation
     writeln('  end;');   
     writeln('end.');
   end;
+
+  procedure aSistem_Source2();
+   var
+    f:textfile;
+    l:string;
+   begin
+    assignfile(f, 'Source.txt');
+    reset(f);
+    while not eof(f) do
+     begin
+      readln(f, l);
+      writeln(l);
+     end;
+     close(f);
+   end;
 
   procedure aSistem_Task();
   begin
