@@ -8,3 +8,5 @@ Resources/main
 *.ppu
 
 *.o
+
+main
