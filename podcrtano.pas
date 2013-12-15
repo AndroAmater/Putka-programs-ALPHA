@@ -26,6 +26,8 @@ implementation
   
     for i:= 1 to (c*2)-1 do
       write('=');
+    writeln;
+    writeln;
   end;
 
   procedure podcrtano_Source();

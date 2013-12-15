@@ -17,6 +17,7 @@ implementation
     f:textfile;
     l:string;
    begin
+    clrscr;
     assignfile(f, 'List.txt');
     reset(f);
     while not eof(f) do
@@ -39,6 +40,7 @@ implementation
     f:textfile;
     l:string;
    begin
+    clrscr;
     assignfile(f, 'Help.txt');
     reset(f);
     while not eof(f) do
