@@ -1,0 +1,22 @@
+program podcrtano;
+var
+  a:string;
+  b:char;
+  c, i:integer;
+begin
+  a:='';
+  c:=0;
+  i:=0;
+  readln(a);
+  c:=length(a);
+  for i:= 1 to c do
+  begin
+    b:=a[i];
+    write(b, ' ');
+  end;
+  writeln;
+  for i:= 1 to (c*2)-1 do
+    write('=');
+  writeln;
+  writeln;
+end;

@@ -1,0 +1,23 @@
+Naloga
+  Napiši program, ki prebere naslov in izpiše njegovo poudarjeno
+  (razmaknjeno in podčrtano) različico. Program naj prebere eno 
+  vrstico besedila; ta predstavlja naslov. Izpiše naj poudarjen 
+  naslov (za to bo potreboval dve vrstici -- eno za razmaknjeno 
+  besedilo in eno za podčrtavo).
+
+--------------------------------------------------------------------------------------------
+
+Omejitve vhodnih podatkov
+  Naslov bo dolg največ 35 znakov.
+  Naslov se ne bo začel ali končal s presledkom.
+
+--------------------------------------------------------------------------------------------
+
+Primeri
+  Vhod                            Izhod
+  Katastrofa!                     K a t a s t r o f a !
+                                  =====================
+
+  Vhod                            Izhod
+  Putke za gripo krivijo prašiče  P u t k e   z a   g r i p o   k r i v i j o   p r a š i č e
+                                  ===========================================================

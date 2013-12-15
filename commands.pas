@@ -2,7 +2,7 @@ unit commands;
 interface
 {$mode objfpc}
 uses
-  a_sistem, podcrtano, crt, sysutils;
+  aSistem, podcrtano, crt, sysutils;
   procedure quit();
   procedure run();
   procedure task();
@@ -64,7 +64,7 @@ implementation
     if z3 = '1a' then
      begin
       clrscr;
-      aSistem();
+      aSistem.aSistem;
      end
     else if z3 = '1b' then
      begin
@@ -85,12 +85,12 @@ implementation
     if z3 = '1a' then
      begin
       clrscr;
-      aSistem_Task();
+      aSistemTask();
      end
     else if z3 = '1b' then
      begin
       clrscr;
-      podcrtano_Task();
+      podcrtanoTask();
      end
     else
       writeln('Unknown program'); 
@@ -106,12 +106,12 @@ implementation
     if z3 = '1a' then
      begin
       clrscr;
-      aSistem_Source();
+      aSistemSource();
      end
     else if z3 = '1b' then
      begin
       clrscr;
-      podcrtano_Source();
+      podcrtanoSource();
      end
     else
       writeln('Unknown program');
