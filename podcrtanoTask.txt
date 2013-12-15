@@ -1,15 +1,15 @@
 Naloga
-  Napiši program, ki prebere naslov in izpiše njegovo poudarjeno
-  (razmaknjeno in podčrtano) različico. Program naj prebere eno 
-  vrstico besedila; ta predstavlja naslov. Izpiše naj poudarjen 
+  Napisi program, ki prebere naslov in izpise njegovo poudarjeno
+  (razmaknjeno in podcrtano) razlicico. Program naj prebere eno 
+  vrstico besedila; ta predstavlja naslov. Izpise naj poudarjen 
   naslov (za to bo potreboval dve vrstici -- eno za razmaknjeno 
-  besedilo in eno za podčrtavo).
+  besedilo in eno za podcrtavo).
 
 --------------------------------------------------------------------------------------------
 
 Omejitve vhodnih podatkov
-  Naslov bo dolg največ 35 znakov.
-  Naslov se ne bo začel ali končal s presledkom.
+  Naslov bo dolg najvec 35 znakov.
+  Naslov se ne bo zacel ali koncal s presledkom.
 
 --------------------------------------------------------------------------------------------
 
@@ -19,5 +19,5 @@ Primeri
                                   =====================
 
   Vhod                            Izhod
-  Putke za gripo krivijo prašiče  P u t k e   z a   g r i p o   k r i v i j o   p r a š i č e
+  Putke za gripo krivijo prasice  P u t k e   z a   g r i p o   k r i v i j o   p r a s i c e
                                   ===========================================================
