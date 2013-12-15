@@ -1,10 +1,8 @@
 unit commands;
-//uses
-//  Help, list, a_sistem, podcrtano, ctr;
-
 interface
+{$mode objfpc}
 uses
-  Help, list, a_sistem, podcrtano, crt;
+  a_sistem, podcrtano, crt, sysutils;
   procedure quit();
   procedure run();
   procedure task();
@@ -15,9 +13,20 @@ uses
 
 implementation
   procedure list();
+   var
+    f:textfile;
+    l:string;
    begin
-   	clrscr;
-    List1();
+    assignfile(f, 'List.txt');
+    reset(f);
+    while not eof(f) do
+     begin
+      readln(f, l);
+      writeln(l);
+     end;
+     closeFile(f);
+     writeln;
+     writeln;
    end;
 
   procedure clear();
@@ -26,9 +35,20 @@ implementation
    end;
 
   procedure help();
+   var
+    f:textfile;
+    l:string;
    begin
-      clrscr;  
-      ShowHelp();   	
+    assignfile(f, 'Help.txt');
+    reset(f);
+    while not eof(f) do
+     begin
+      readln(f, l);
+      writeln(l);
+     end;
+     closeFile(f);
+     writeln;
+     writeln;
    end;
 
   procedure run();
@@ -36,7 +56,7 @@ implementation
    begin
     z3:='';
     clrscr;
-    List1();
+    list();
     write('Run> ');
     readln(z3);
     if z3 = '1a' then
@@ -57,7 +77,7 @@ implementation
    var z3:string;
    begin
     clrscr;
-    List1();
+    list();
     write('Program task> ');
     readln(z3);
     if z3 = '1a' then
@@ -78,7 +98,7 @@ implementation
    var z3:string;
    begin
     clrscr;
-    List1();
+    list();
     write('Program source> ');
     readln(z3);
     if z3 = '1a' then
