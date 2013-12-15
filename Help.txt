@@ -1,0 +1,12 @@
+    -------------------Help-------------------
+    Commands:;
+    l - List currently implemented programs
+    r - Run a program. Enter "r" then enter
+        program number shown by list command
+    s - Show source code. Enter "s" then enter
+        program number shown by list command
+    t - Show program task. Enter "t" then enter
+        program number shown by list command
+    c - Clear screen;
+    q! - Quit program
+    ------------------(>0_0>)-----------------

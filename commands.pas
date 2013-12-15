@@ -1,10 +1,8 @@
 unit commands;
-//uses
-//  Help, list, a_sistem, podcrtano, ctr;
-
 interface
+{$mode objfpc}
 uses
-  Help, list, a_sistem, podcrtano, crt;
+  aSistem, podcrtano, crt, sysutils;
   procedure quit();
   procedure run();
   procedure task();
@@ -15,9 +13,21 @@ uses
 
 implementation
   procedure list();
+   var
+    f:textfile;
+    l:string;
    begin
-   	clrscr;
-    List1();
+    clrscr;
+    assignfile(f, 'List.txt');
+    reset(f);
+    while not eof(f) do
+     begin
+      readln(f, l);
+      writeln(l);
+     end;
+     closeFile(f);
+     writeln;
+     writeln;
    end;
 
   procedure clear();
@@ -26,9 +36,21 @@ implementation
    end;
 
   procedure help();
+   var
+    f:textfile;
+    l:string;
    begin
-      clrscr;  
-      ShowHelp();   	
+    clrscr;
+    assignfile(f, 'Help.txt');
+    reset(f);
+    while not eof(f) do
+     begin
+      readln(f, l);
+      writeln(l);
+     end;
+     closeFile(f);
+     writeln;
+     writeln;
    end;
 
   procedure run();
@@ -36,13 +58,13 @@ implementation
    begin
     z3:='';
     clrscr;
-    List1();
+    list();
     write('Run> ');
     readln(z3);
     if z3 = '1a' then
      begin
       clrscr;
-      aSistem();
+      aSistem.aSistem;
      end
     else if z3 = '1b' then
      begin
@@ -57,18 +79,18 @@ implementation
    var z3:string;
    begin
     clrscr;
-    List1();
+    list();
     write('Program task> ');
     readln(z3);
     if z3 = '1a' then
      begin
       clrscr;
-      aSistem_Task();
+      aSistemTask();
      end
     else if z3 = '1b' then
      begin
       clrscr;
-      podcrtano_Task();
+      podcrtanoTask();
      end
     else
       writeln('Unknown program'); 
@@ -78,18 +100,18 @@ implementation
    var z3:string;
    begin
     clrscr;
-    List1();
+    list();
     write('Program source> ');
     readln(z3);
     if z3 = '1a' then
      begin
       clrscr;
-      aSistem_Source();
+      aSistemSource();
      end
     else if z3 = '1b' then
      begin
       clrscr;
-      podcrtano_Source();
+      podcrtanoSource();
      end
     else
       writeln('Unknown program');

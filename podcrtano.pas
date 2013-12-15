@@ -1,8 +1,11 @@
 unit podcrtano;
+{$mode objfpc}
 interface
+uses
+  sysutils;
 procedure podcrtano();
-procedure podcrtano_Source();
-procedure podcrtano_Task();
+procedure podcrtanoSource();
+procedure podcrtanoTask();
 
 implementation
   procedure podcrtano();
@@ -11,6 +14,7 @@ implementation
     b:char;
     c, i:integer;
   begin
+    writeln('Enter some text and I will underline it:');
     a:='';
     c:=0;
     i:=0;
@@ -26,38 +30,40 @@ implementation
   
     for i:= 1 to (c*2)-1 do
       write('=');
+    writeln;
+    writeln;
   end;
 
-  procedure podcrtano_Source();
-  begin
-    writeln('program podcrtano;');
-    writeln;
-    writeln('var');
-    writeln('  a:string;');
-    writeln('  b:char;');
-    writeln;
-    writeln('  c, i:integer;');
-    writeln;
-    writeln('begin');
-    writeln('  a:='';');
-    writeln('  c:=0;');
-    writeln('  i:=0;');
-    writeln('  readln(a);');
-    writeln('  c:=length(a);');
-    writeln;
-    writeln('  for i:= 1 to c do');
-    writeln('  begin');
-    writeln('    b:=a[i];');
-    writeln('    write(b, VSTAVIUNO);');
-    writeln('  end; writeln;');
-    writeln;
-    writeln('  for i:= 1 to (c*2)-1 do');
-    writeln('    write('=');');
-    writeln('end.');
-  end;
-
-  procedure podcrtano_Task();
-  begin
-    writeln('Not implemented yet comming shortly.');
-  end;
+  procedure podcrtanoSource();
+   var
+    f:textfile;
+    l:string;
+   begin
+    assignfile(f, 'podcrtanoSource.txt');
+    reset(f);
+    while not eof(f) do
+     begin
+      readln(f, l);
+      writeln(l);
+     end;
+     closeFile(f);
+     writeln;
+     writeln;
+   end;
+  procedure podcrtanoTask();
+   var
+    f:textfile;
+    l:string;
+   begin
+    assignfile(f, 'podcrtanoTask.txt');
+    reset(f);
+    while not eof(f) do
+     begin
+      readln(f, l);
+      writeln(l);
+     end;
+     closeFile(f);
+     writeln;
+     writeln;
+   end;
 end.
